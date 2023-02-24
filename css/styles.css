@@ -7,6 +7,7 @@ body {
     background-color: #2E223C;
     color: floralwhite;
     font-family: 'Tilt Neon', cursive, sans-serif;
+    text-align: center;
   }
 
   h1 {
@@ -72,8 +73,6 @@ body {
   }
   
   section {
-    display: grid;
-    gap: 1.1rem;
     margin: 1rem;
   }
   
@@ -93,7 +92,7 @@ body {
   
   section p {
     margin-bottom: 2rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   
   #skill {
@@ -112,6 +111,7 @@ body {
     margin: 0;
     padding: 1rem;
     text-shadow: 2px 2px 5px rgba(214, 97, 97, 0.5);
+    text-align: left;
   }
   
   li {
@@ -127,10 +127,6 @@ body {
 
   .quote {
     margin-bottom: 5px;
-  }
-  
-  cite {
-    text-align: right;
   }
 
   blockquote, cite {
@@ -164,7 +160,6 @@ body {
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items: center;
     align-items: center;
     padding: 1rem;
     background-color: #ADA8BE;
@@ -191,12 +186,17 @@ body {
   @media screen and (min-width: 768px) {
     .intro {
       display: flex;
-      align-items: center;
       flex-direction: row-reverse;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .intro h2 {
+      margin: 0;
     }
 
     .intro img {
-      margin-left: 30px;
+      margin-left: 20px;
     }
 
     .nav-list {
@@ -206,11 +206,18 @@ body {
     }
 
     section {
+      display: grid;
+      gap: 1rem;
       grid-template-columns: repeat(2, 1fr);
+      margin: 0 2rem
     }
 
     .skillsec section {
       display: block;
+    }
+
+    ol {
+      margin-top: 1rem;
     }
 
     .contact-info {
@@ -241,13 +248,18 @@ body {
       margin-right: 20px;
       list-style: none;
     }
-    
-    footer a:visited {
-      color: inherit;
+
+    footer {
+      display: flex;
+      justify-content: space-between;
     }
 
     footer h2 {
-      margin-right: 10vw;
+      margin-top: 3px;
+    }
+    
+    footer a:visited {
+      color: inherit;
     }
 
     footer h2:hover {
