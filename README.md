@@ -1,2 +1,2 @@
-# Mobile-First-Responsive-Layoutt
+# Mobile-First-Responsive-Layout
 TechDegree#2
